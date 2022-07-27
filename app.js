@@ -6,7 +6,7 @@ const io = require('socket.io')(http);
 app.use(express.static('static'));
 
 http.listen(5050, ()=> {
-	console.log("Server running ... ")
+	console.log("Server running... ")
 });
 
 io.on('connection',socket=>{
